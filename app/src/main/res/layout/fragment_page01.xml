@@ -1,0 +1,153 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Page01">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/txtAddress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="ที่อยู่"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txtAddress11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="57/1 ม.1 "
+                android:layout_below="@+id/txtAddress1"
+                />
+            <TextView
+                android:id="@+id/line01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/txtAddress11"
+                android:text="_________________________________________________ "
+                />
+
+        <!-- end of address-->
+
+            <TextView
+                android:id="@+id/txtTambon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="ตำบล"
+                android:textStyle="bold"
+                android:layout_below="@id/line01"
+                />
+            <TextView
+                android:id="@+id/txtTambon11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="แสนสุข"
+                android:layout_below="@id/txtTambon1"
+                />
+
+            <TextView
+                android:id="@+id/txtAumper1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="อำเภอ"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:layout_alignBaseline="@+id/txtTambon1"
+                android:layout_alignBottom="@+id/txtTambon1"
+                android:layout_toRightOf="@+id/txtAddress11"
+                android:layout_toEndOf="@+id/txtAddress11"
+                android:layout_marginStart="50dp" />
+
+            <TextView
+                android:id="@+id/txtAumper11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เมือง"
+                android:layout_alignBaseline="@+id/txtTambon11"
+                android:layout_alignBottom="@+id/txtTambon11"
+                android:layout_alignLeft="@+id/txtAumper1"
+                android:layout_alignStart="@+id/txtAumper1" />
+            <TextView
+                android:id="@+id/line02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/txtTambon11"
+                android:text="_________________________________________________ "
+                />
+
+        <!-- end of Tambon and Aumper -->
+
+        <TextView
+            android:id="@+id/txtProvince1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="จังหวัด"
+            android:textStyle="bold"
+            android:layout_below="@id/line02"
+            />
+        <TextView
+            android:id="@+id/txtProvice11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="ชลบุรี"
+            android:layout_below="@id/txtProvince1"
+            />
+
+        <TextView
+            android:id="@+id/txtZipCode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="รหัสไปรษณีย์"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_alignBaseline="@+id/txtProvince1"
+            android:layout_alignBottom="@+id/txtProvice11"
+            android:layout_toRightOf="@+id/txtAddress11"
+            android:layout_toEndOf="@+id/txtAddress11"
+            android:layout_marginStart="50dp" />
+
+        <TextView
+            android:id="@+id/txtZipCode11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21000"
+            android:layout_alignBaseline="@+id/txtProvice11"
+            android:layout_alignBottom="@+id/txtTambon11"
+            android:layout_alignLeft="@+id/txtAumper1"
+            android:layout_alignStart="@+id/txtAumper1" />
+
+        <TextView
+            android:id="@+id/line03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/txtProvice11"
+            android:text="_________________________________________________ "/>
+
+        <!-- end of Province and รหัสไปรษณีย์ -->
+    </RelativeLayout>
+
+</FrameLayout>
